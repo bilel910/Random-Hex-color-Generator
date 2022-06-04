@@ -55,7 +55,7 @@ p {
 
 .count {
   font-size: 4rem;
-  border: 1px solid var(--white);
+  /*border: 1px solid var(--white);*/
   padding: 0 1rem-;
 }
 .code-color {
