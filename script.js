@@ -1,12 +1,13 @@
-const num = document.querySelector(".num");
+const hex = document.querySelector(".hex");
 const generateBtn = document.querySelector(".generate");
 const containerBg = document.querySelector(".container");
 
-const generateNumber = () => {
-  let rand = Math.floor(Math.random() * 100 + 1);
-  num.innerHTML = rand;
+const generateColor = () => {
+  let colorGenerate = "#" + Math.random().toString(16).slice(2, 8);
+  hex.innerHTML = colorGenerate;
+  containerBg.style.backgroundColor = colorGenerate;
 };
 
-generateBtn.addEventListener("click", generateNumber);
+generateBtn.addEventListener("click", generateColor);
 
-generateNumber();
+generateColor();
